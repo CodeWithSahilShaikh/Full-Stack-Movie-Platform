@@ -29,67 +29,6 @@ Welcome to **CineCloud**, a comprehensive full-stack movie and TV show explorati
 *   **Authentication**: JSON Web Tokens (JWT) & bcryptjs
 *   **Middleware**: CORS, Cookie-Parser, express.json
 
-## 🚀 Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
-
-### Prerequisites
-
-*   Node.js (v18 or higher recommended)
-*   MongoDB instance (local or MongoDB Atlas)
-*   TMDB (The Movie Database) API Key
-
-### Installation & Setup
-
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/CodeWithSahilShaikh/Full-Stack-Movie-Platform.git
-    cd Full-Stack-Movie-Platform
-    ```
-
-2.  **Setup the Backend**
-    ```bash
-    cd movie-platform-backend
-    npm install
-    ```
-    Create a `.env` file in the `movie-platform-backend` directory and add the following variables:
-    ```env
-    PORT=5000
-    MONGODB_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret_key
-    NODE_ENV=development
-    ```
-
-3.  **Setup the Frontend**
-    ```bash
-    cd ../movie-platform-frontend
-    npm install
-    ```
-    Create a `.env` file in the `movie-platform-frontend` directory and add your TMDB configuration:
-    ```env
-    VITE_TMDB_API_KEY=your_tmdb_api_key
-    VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
-    VITE_TMDB_IMAGE_BASE_URL=https://image.tmdb.org/t/p
-    VITE_API_BASE_URL=http://localhost:5000/api
-    ```
-
-### Running the Application
-
-You will need two terminal windows to run both the frontend and backend servers simultaneously.
-
-**Terminal 1 (Backend):**
-```bash
-cd movie-platform-backend
-npm run dev
-```
-
-**Terminal 2 (Frontend):**
-```bash
-cd movie-platform-frontend
-npm run dev
-```
-
-The frontend application will be served at `http://localhost:5173` (or the port specified by Vite), and the backend API will run on `http://localhost:5000`.
 
 ## 📁 Project Structure
 
@@ -118,6 +57,3 @@ Full-Stack-Movie-Platform/
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/CodeWithSahilShaikh/Full-Stack-Movie-Platform/issues).
 
-## 📝 License
-
-This project is licensed under the ISC License.
